@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Store</title>
+        <title>Store | CAFE GUE</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -27,7 +27,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="../index.html">>Cafe Gue</a>
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="../index.html">Cafe Gue</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
@@ -90,6 +90,7 @@
                                 <br />
                                 (+62) 21-585-8468
                             </p><br>
+                            <!-- Booking Form -->
                             <section class="section-padding" id="booking">
                                 <div class="container">
                                     <div class="row">
@@ -110,7 +111,7 @@
                                                         </div>
                 
                                                         <div class="col-lg-6 col-12">
-                                                            <input type="telephone" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" class="form-control" placeholder="format: 1234-5678-9000">
+                                                            <input type="telephone" name="phone" id="phone" pattern="[0-9]{4}[0-9]{4}[0-9]{4}" class="form-control" placeholder="format: 1234-5678-9000">
                                                         </div>
                 
                                                         <div class="col-lg-6 col-12">
@@ -122,9 +123,9 @@
                                                             <textarea class="form-control" rows="5" id="message" name="message" placeholder="Additional Message"></textarea>
                                                         </div>
                                                         
-                                                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
-                                                            <button type="submit" class="form-control" id="submit-button">Book Now !</button>
-                                                            <button type="submit" class="btn btn-block btn-outline-secondary">book now !</button>
+                                                        <div class="">
+                                                            <button type="submit" class="btn btn-block btn-outline-secondary" id="submit-button" onclick="return login()">Book Now !</button>
+                                                            
                                                         </div>
                                                     </div>
                                                 </form>
@@ -174,6 +175,11 @@
                  </ul>
             </div>
         </footer>
+        <script>
+            function login(){
+                window.location = "../index.html"
+            }
+        </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
